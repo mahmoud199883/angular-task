@@ -1,0 +1,60 @@
+
+/* main page styling */
+
+section {
+    width: 98%;
+    margin: auto;
+}
+
+.selectcontainer
+{
+    width: 10%;
+    margin: auto;
+}
+.article-container {
+    margin: auto;
+    width: 24% ;
+    padding: 0.5%;
+    float: left;
+}
+img {
+    width: 100%;
+}
+.article-data {
+    margin: auto;
+    background-color: rgb(29, 22, 63);
+    color: white;
+    padding: 20px;
+}
+select
+{
+    padding: 10px 20px;
+    margin: 20px;
+}
+.clear {
+    clear: both;
+}
+button
+{
+    padding: 10px;
+    margin: 5px 0px 0px 30px ;
+}
+.btn
+{
+    text-align: center;
+}
+/* media query for RWD */
+@media(max-width:1000px) and (min-width:701px) {
+    .article-container {
+        width: 45%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:700px) {
+    .article-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+

@@ -1,0 +1,48 @@
+<!-- this select to retrive all names in dropdown list that comes from myData arry -->
+<div class="selectcontainer">
+    <select ngModel (ngModelChange)="mySelectHandler($event)">
+        <option *ngFor="let value of myData" [ngValue]="value">{{value.name}}</option>
+    </select>
+</div>
+
+<!-- this a btn that will display all product -->
+<div class="btn">
+    <button (click)="setItem()"> All Product</button>
+</div>
+
+
+
+
+
+<!-- to retrive all data that come from json serever -->
+<section>
+    <div class="selsectmenu">
+        <div class="article-container" *ngFor="let item of selectedItemContainer">
+            <div class="article-data">
+                <div>
+                    <img [src]="item.img" alt="problem in img" />
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.body}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div calss="clear"></div>
+</section>
+
+
+<!-- to retrive only data of selected name in the dropdown list  that come from json serever -->
+<section *ngIf="selectedItemContainer.length==0">
+    <div class="selsectmenu">
+        <div class="article-container" *ngFor="let item of myData">
+            <div class="article-data">
+                <div>
+                    <img [src]="item.img" alt="problem in img" />
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.body}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div calss="clear"></div>
+</section>

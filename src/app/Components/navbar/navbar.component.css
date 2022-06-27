@@ -1,0 +1,27 @@
+.navbar span
+{
+    float: left;
+    color:aqua;
+    padding: 11px 0;
+}
+.navbar{
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: rgb(101, 101, 221); 
+    color: white;
+}
+.navbarLinks
+{
+    overflow: auto;
+}
+.navbarLinks .links 
+{
+    float: right;
+    background-color: red;
+    padding: 5px 10px; 
+    margin: 5px 20px;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+}

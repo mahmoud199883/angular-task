@@ -1,0 +1,18 @@
+<div class="container ">
+    <form [formGroup]='ArticleForm' (ngSubmit)="getArticleData(ArticleForm)">
+        <h2>Add New Article</h2>
+        <div>
+            <label htmlFor="name">Name :</label>
+            <input formControlName="name" type="text" id="name" name="name" placeholder="Article name.." />
+        </div>
+        <div>
+            <label htmlFor="img"> Image : </label>
+            <input formControlName="img" type="file" id="img" name="img" placeholder="Article img.." />
+        </div>
+        <div>
+            <label htmlFor="body">Body : </label>
+            <input formControlName="body" type="text" id="body" name="body" placeholder="Article Description.." />
+        </div>
+        <button type="submit">Add New Article</button>
+    </form>
+</div>
